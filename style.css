@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --electric: #0079ff;
+  --gray: #697c9a;
+  --darkSky: #4b6a9b;
+  --darkBlue: #2b3442;
+  --lightBg: #f6f8ff;
+  --light: #fefefe;
+  --white: #ffffff;
+  --dark: #141d2f;
+  --semiDark: #1e2a47;
+  --error: #f74646;
+}
+
+.display {
+  opacity: 0;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Space Mono", monospace;
+  background-color: #f6f8ff;
+}
+
+.container {
+  margin-top: 5%;
+}
+
+.card {
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 15px;
+}
+
+.form {
+  padding: 7px 7px 7px 16px;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+}
+
+#user {
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+  margin-left: 9px;
+  font-family: "Space Mono", monospace;
+  color: #222731;
+  width: 184px;
+  margin-right: 150px;
+}
+
+.btn {
+  padding: 12px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--electric);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+.userImg {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  margin-right: 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.bio {
+  /* max-width: 45%; */
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+  color: var(--darkSky);
+  margin-top: 33px;
+}
+
+.info h3 {
+  padding-left: 100px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0px;
+  background-color: var(--lightBg);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.social-handles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.socials h3 {
+  margin-left: 15px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 20px;
+  padding: 25px;
+}
